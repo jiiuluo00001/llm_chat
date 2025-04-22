@@ -8,7 +8,7 @@ export interface DeepSeekConfig {
 
 // Default configuration, can be overridden in the UI
 export const defaultConfig: DeepSeekConfig = {
-  apiKey: "sk-bdffa67308784d2f88c109e784e99a6d",
+  apiKey: "sk-***",
   baseUrl: "https://api.deepseek.com/v1",
   model: "deepseek-chat",
   stream: true,
@@ -37,4 +37,4 @@ export function saveConfig(config: DeepSeekConfig): void {
     return;
   }
   localStorage.setItem('deepseekConfig', JSON.stringify(config));
-} 
+}
